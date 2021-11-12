@@ -4,12 +4,12 @@
   </button>
 
   <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
-    <ul class="navbar-nav mr-auto d-flex align-items-center">
+    <ul class="navbar-nav ml-auto mr-auto d-flex align-items">
       <li class="nav-item active">
-        <img src="https://avatars.githubusercontent.com/u/89674125?v=4" alt="Imagem do user" width="50px" height="50px" class="img-fluid rounded-circle">
+        <img src="{{foto}}" alt="Imagem do user" width="50px" height="50px" class="img-fluid rounded-circle">
       </li>
       <li class="nav-item pl-3">
-        <p class="m-0 font-weight-bold text-white fs-16">Nome do usuárie</p>
+        <p class="m-0 font-weight-bold text-white fs-16">{{nome}}</p>
       </li>
 
       <li class="nav-item pl-3">
@@ -19,9 +19,9 @@
       </li>
     </ul>
 
-    <ul class="navbar-nav ml-auto d-flex align-items-center">
+    <ul class="navbar-nav ml-auto d-flex align-content-md-end">
       <li class="nav-item pl-3">
-        <a class="m-0 font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
+        <a (click)='sair()' class="align-items font-weight-bold text-white fs-16">Sair <i class="fa fa-sign-out" aria-hidden="true"></i></a>
       </li>
     </ul>
 
