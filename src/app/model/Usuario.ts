@@ -8,6 +8,5 @@ export class Usuario{
     public foto: string;
     public tipo: string;
     public minhasPostagens: Postagem[]
-  id: any;
 
 }
